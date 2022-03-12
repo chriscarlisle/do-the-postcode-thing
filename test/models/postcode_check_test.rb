@@ -30,6 +30,7 @@ class PostcodeCheckTest < ActiveSupport::TestCase
 
   test "serviced? returns true for explicitly serviced postcodes" do
     VALID_FORMAT_POSTCODES[:explicitly_serviced].each do |postcode|
+      ServicedPostcode.new(postcode: postcode).save
       assert PostcodeCheck.new(postcode).serviced?
     end
   end

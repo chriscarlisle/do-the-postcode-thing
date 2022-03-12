@@ -28,7 +28,7 @@ class PostcodeCheck
   end
 
   def explicitly_serviced?
-    EXPLICITLY_SERVICED_POSTCODES.include? @ukpostcode.to_s
+    ServicedPostcode.where(postcode: @ukpostcode.to_s).exists?
   end
   
   def serviced_by_lsoa?
