@@ -57,4 +57,18 @@ class PostcodeCheckTest < ActiveSupport::TestCase
     end
   end
 
+  test "serviced? raises PostcodeCheckUnavailable if there is a network issue" do
+    postcodes_io = Minitest::Mock.new
+    def postcodes_io.lookup(postcode)
+      raise Excon::Error
+    end
+
+    Postcodes::IO.stub :new, postcodes_io do
+      VALID_FORMAT_POSTCODES[:serviced_by_lsoa].each do |postcode|
+        assert_raises PostcodeCheck::PostcodeCheckUnavailable do
+          PostcodeCheck.new(postcode).serviced?
+        end
+      end
+    end
+  end
 end

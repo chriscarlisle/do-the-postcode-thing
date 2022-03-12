@@ -38,5 +38,7 @@ class PostcodeCheck
     return false unless postcode
     
     return postcode.lsoa.start_with? *SERVICED_LSOAS
+  rescue Excon::Error
+    raise PostcodeCheckUnavailable
   end
 end
