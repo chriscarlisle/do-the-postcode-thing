@@ -50,6 +50,8 @@ class PostcodeCheckTest < ActiveSupport::TestCase
   end
 
   test "serviced? returns true for postcodes serviced by lsoa" do
+    ServicedLsoa.new(lsoa_prefix: "Southwark").save
+    ServicedLsoa.new(lsoa_prefix: "Lambeth").save
     VCR.use_cassette("serviced_by_lsoa") do
       VALID_FORMAT_POSTCODES[:serviced_by_lsoa].each do |postcode|
         assert PostcodeCheck.new(postcode).serviced?

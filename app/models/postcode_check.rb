@@ -1,16 +1,6 @@
 class PostcodeCheck
   class PostcodeCheckUnavailable < StandardError; end
 
-  EXPLICITLY_SERVICED_POSTCODES = [
-    "SH24 1AA",
-    "SH24 1AB"
-  ]
-
-  SERVICED_LSOAS = [
-    "Southwark",
-    "Lambeth"
-  ]
-
   def initialize(postcode)
     @ukpostcode = UKPostcode.parse(postcode)
   end
@@ -36,8 +26,8 @@ class PostcodeCheck
     postcode = postcodes_io.lookup(@ukpostcode.to_s)
 
     return false unless postcode
-    
-    return postcode.lsoa.start_with? *SERVICED_LSOAS
+
+    return postcode.lsoa.start_with? *ServicedLsoa.pluck(:lsoa_prefix)
   rescue Excon::Error
     raise PostcodeCheckUnavailable
   end
