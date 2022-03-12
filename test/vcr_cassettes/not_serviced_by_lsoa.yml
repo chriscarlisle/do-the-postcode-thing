@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/LA26PR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.91.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 12 Mar 2022 14:06:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '906'
+      Connection:
+      - keep-alive
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"38a-AdVV+Ny6iuCENc0Nn7vplY+GAes"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '1180'
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UEW%2BJGZlRKJYpdepwfrjaE3IB1MchaA8ZEevNY2DDAFNOYkxiZ4ECQdixn1hQ4wuGG99%2BdOs5gslgkNuIncmWCqtOmwM%2BBgn1w%2FtKzMYlXQlkS5YG7E6o614Erpl3mNsdpQiCBsU"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ead1756ff5ed218-MAN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"LA2 6PR","quality":1,"eastings":350248,"northings":465019,"country":"England","nhs_ha":"North
+        West","longitude":-2.76191,"latitude":54.078676,"european_electoral_region":"North
+        West","primary_care_trust":"North Lancashire Teaching","region":"North West","lsoa":"Lancaster
+        005A","msoa":"Lancaster 005","incode":"6PR","outcode":"LA2","parliamentary_constituency":"Morecambe
+        and Lunesdale","admin_district":"Lancaster","parish":"Halton-with-Aughton","admin_county":"Lancashire","admin_ward":"Halton-with-Aughton","ced":"Lancaster
+        Rural East","ccg":"NHS Morecambe Bay","nuts":"Lancaster and Wyre","codes":{"admin_district":"E07000121","admin_county":"E10000017","admin_ward":"E05009598","parish":"E04005189","parliamentary_constituency":"E14000825","ccg":"E38000228","ccg_id":"01K","ced":"E58000781","nuts":"TLD44","lsoa":"E01025108","msoa":"E02005225","lau2":"E07000121"}}}'
+  recorded_at: Sat, 12 Mar 2022 14:06:32 GMT
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/LA26PS
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.91.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 12 Mar 2022 14:06:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '907'
+      Connection:
+      - keep-alive
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"38b-jRJs1ucLhYlls/y+LO3qxwsSH1Y"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '1180'
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BlciqaRKxttfPoEXVeY3X52AH73LEiCvxe9sW3%2FsWqzhnBjukPXep%2B0niP1K62pVr9chM%2FtKzOeHHepAz976V9aO2qTdocPQjrVCFRJl3d7%2FQXz4Bh3iIySASMy1FuGB3X%2Fw95dt"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ead175799d4d214-MAN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"LA2 6PS","quality":1,"eastings":350437,"northings":465039,"country":"England","nhs_ha":"North
+        West","longitude":-2.759022,"latitude":54.078885,"european_electoral_region":"North
+        West","primary_care_trust":"North Lancashire Teaching","region":"North West","lsoa":"Lancaster
+        005A","msoa":"Lancaster 005","incode":"6PS","outcode":"LA2","parliamentary_constituency":"Morecambe
+        and Lunesdale","admin_district":"Lancaster","parish":"Halton-with-Aughton","admin_county":"Lancashire","admin_ward":"Halton-with-Aughton","ced":"Lancaster
+        Rural East","ccg":"NHS Morecambe Bay","nuts":"Lancaster and Wyre","codes":{"admin_district":"E07000121","admin_county":"E10000017","admin_ward":"E05009598","parish":"E04005189","parliamentary_constituency":"E14000825","ccg":"E38000228","ccg_id":"01K","ced":"E58000781","nuts":"TLD44","lsoa":"E01025108","msoa":"E02005225","lau2":"E07000121"}}}'
+  recorded_at: Sat, 12 Mar 2022 14:06:32 GMT
+recorded_with: VCR 6.0.0

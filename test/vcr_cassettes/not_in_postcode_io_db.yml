@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/TE371NG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.91.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sat, 12 Mar 2022 14:06:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '43'
+      Connection:
+      - keep-alive
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"2b-60dCBHUxbddknotWwisUCk6O8SA"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '191'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KEV7WhQOp91L8DgEEQ4IaSflrxrBHNqXuO6YTf%2Bj0lXW43XPR4lFee%2BsgyxFeuG6ynYw3T7rwOU7qyhlY9H%2Fl9ZQvTeZBuszM0xw%2FAUrCPYUn%2BwjHL1FrUpIHT%2Fxd5O99bFvtPG1"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ead175609c354b8-MAN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":404,"error":"Postcode not found"}'
+  recorded_at: Sat, 12 Mar 2022 14:06:32 GMT
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/TE371NG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.91.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sat, 12 Mar 2022 14:06:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '43'
+      Connection:
+      - keep-alive
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"2b-60dCBHUxbddknotWwisUCk6O8SA"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '192'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ns2WBXdEsXm6ntzOYO4DjcMWM2mWf9sb2Jt%2FpIIq0z17zeIYKqI2CCPVQtBqtTYYGw2SC0bSwxFqFS26IxmyeDW%2B%2FxEDzKBzd4hAGdzW9hytC4jvMdmKZT2ZihUq%2FFipKIVv57Pc"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ead17567b0354d6-MAN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":404,"error":"Postcode not found"}'
+  recorded_at: Sat, 12 Mar 2022 14:06:32 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/SE17QD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.91.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 12 Mar 2022 14:06:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '865'
+      Connection:
+      - keep-alive
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"361-L7VrDXW3HuMgFqM+YjyYpD8TP5I"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '1179'
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=P9a5gIOogILVv2z9D3q6%2FC6Oef2XCxhIbP1VTcISyVuu2a80qbh32IptwvPwDqP0Udjqtro4YjNzawaxva%2B%2BRxupPmKFmoH2IAZLpQzq3RjCruvPoOq3Gzi2h1DpADJ2CV1hvc5v"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ead175538313607-MAN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"SE1 7QD","quality":1,"eastings":531513,"northings":179395,"country":"England","nhs_ha":"London","longitude":-0.106793,"latitude":51.498204,"european_electoral_region":"London","primary_care_trust":"Southwark","region":"London","lsoa":"Southwark
+        034A","msoa":"Southwark 034","incode":"7QD","outcode":"SE1","parliamentary_constituency":"Bermondsey
+        and Old Southwark","admin_district":"Southwark","parish":"Southwark, unparished
+        area","admin_county":null,"admin_ward":"St George''s","ced":null,"ccg":"NHS
+        South East London","nuts":"Lewisham and Southwark","codes":{"admin_district":"E09000028","admin_county":"E99999999","admin_ward":"E05011114","parish":"E43000218","parliamentary_constituency":"E14000553","ccg":"E38000244","ccg_id":"72Q","ced":"E99999999","nuts":"TLI44","lsoa":"E01003930","msoa":"E02006802","lau2":"E09000028"}}}'
+  recorded_at: Sat, 12 Mar 2022 14:06:32 GMT
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/SE17QA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.91.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 12 Mar 2022 14:06:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '816'
+      Connection:
+      - keep-alive
+      X-Gnu:
+      - Michael J Blanchard
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"330-tRr7ptnfrETmMK1ctDRco0TH15k"
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '1179'
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qCWb5MG2BqZZdCM%2Fb1OR9NNUGAB7Sj23mEd2b73f2vsOtyA34QWR74y4anl9dO9dONk7dNlou6K6cwvk4J5vqA5FVmKiEAQoOvQER6rnoVmQLALciplV%2FGBHjsFqnx8F9KZyptMv"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ead17559ebc5494-MAN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"SE1 7QA","quality":1,"eastings":531183,"northings":179317,"country":"England","nhs_ha":"London","longitude":-0.111573,"latitude":51.49758,"european_electoral_region":"London","primary_care_trust":"Lambeth","region":"London","lsoa":"Lambeth
+        036B","msoa":"Lambeth 036","incode":"7QA","outcode":"SE1","parliamentary_constituency":"Vauxhall","admin_district":"Lambeth","parish":"Lambeth,
+        unparished area","admin_county":null,"admin_ward":"Bishop''s","ced":null,"ccg":"NHS
+        South East London","nuts":"Lambeth","codes":{"admin_district":"E09000022","admin_county":"E99999999","admin_ward":"E05000416","parish":"E43000212","parliamentary_constituency":"E14001008","ccg":"E38000244","ccg_id":"72Q","ced":"E99999999","nuts":"TLI45","lsoa":"E01003014","msoa":"E02006801","lau2":"E09000022"}}}'
+  recorded_at: Sat, 12 Mar 2022 14:06:32 GMT
+recorded_with: VCR 6.0.0

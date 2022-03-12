@@ -33,7 +33,10 @@ class PostcodeCheck
   
   def serviced_by_lsoa?
     postcodes_io = Postcodes::IO.new
-    lsoa = postcodes_io.lookup(@ukpostcode.to_s).lsoa
-    lsoa.start_with? *SERVICED_LSOAS
+    postcode = postcodes_io.lookup(@ukpostcode.to_s)
+
+    return false unless postcode
+    
+    return postcode.lsoa.start_with? *SERVICED_LSOAS
   end
 end
