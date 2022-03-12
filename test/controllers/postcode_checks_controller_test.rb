@@ -1,3 +1,5 @@
+require "test_helper"
+
 class PostcodeChecksControllerTest < ActionDispatch::IntegrationTest
   TEST_POSTCODE = "LA2 6PR"
 

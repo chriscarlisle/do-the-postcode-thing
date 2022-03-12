@@ -73,3 +73,4 @@ end
 
 gem "tailwindcss-rails", "~> 2.0"
 gem "uk_postcode", "~> 2.1"
+gem "postcodes_io", "~> 0.4"

@@ -6,9 +6,9 @@ class PostcodeCheck
     "SH24 1AB"
   ]
 
-  SERVICED_BY_LSOA_POSTCODES = [
-    "SE1 7QD",
-    "SE1 7QA"
+  SERVICED_LSOAS = [
+    "Southwark",
+    "Lambeth"
   ]
 
   def initialize(postcode)
@@ -32,6 +32,8 @@ class PostcodeCheck
   end
   
   def serviced_by_lsoa?
-    SERVICED_BY_LSOA_POSTCODES.include? @ukpostcode.to_s
+    postcodes_io = Postcodes::IO.new
+    lsoa = postcodes_io.lookup(@ukpostcode.to_s).lsoa
+    lsoa.start_with? *SERVICED_LSOAS
   end
 end

@@ -1,3 +1,5 @@
+require "test_helper"
+
 class HomeControllerTest < ActionDispatch::IntegrationTest
   test "the page shows the postcode search form" do
     get root_url
