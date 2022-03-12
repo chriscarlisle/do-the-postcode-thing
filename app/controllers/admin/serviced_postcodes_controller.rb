@@ -1,7 +1,11 @@
-class Admin::ServicedPostcodesController < AdminController
-  private
+# frozen_string_literal: true
 
-  def model
-    ServicedPostcode
+module Admin
+  class ServicedPostcodesController < AdminController
+    private
+
+    def model
+      ServicedPostcode
+    end
   end
 end

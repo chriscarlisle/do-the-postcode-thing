@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class PostcodeCheckTest < ActiveSupport::TestCase
   VALID_FORMAT_POSTCODES = {
     explicitly_serviced: [
       "SH24 1AA",
-      "sh241ab"
+      "sh241ab",
     ],
     serviced_by_lsoa: [
       "SE1 7QD",
@@ -17,8 +19,8 @@ class PostcodeCheckTest < ActiveSupport::TestCase
     not_in_postcode_io_db: [
       "TE37 1NG",
       "te371ng",
-    ]
-  }
+    ],
+  }.freeze
 
   INVALID_FORMAT_POSTCODE = "Banana"
 
@@ -61,7 +63,7 @@ class PostcodeCheckTest < ActiveSupport::TestCase
 
   test "serviced? raises PostcodeCheckUnavailable if there is a network issue" do
     postcodes_io = Minitest::Mock.new
-    def postcodes_io.lookup(postcode)
+    def postcodes_io.lookup(*)
       raise Excon::Error
     end
 

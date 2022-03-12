@@ -1,7 +1,11 @@
-class Admin::ServicedLsoasController < AdminController
-  private
+# frozen_string_literal: true
 
-  def model
-    ServicedLsoa
+module Admin
+  class ServicedLsoasController < AdminController
+    private
+
+    def model
+      ServicedLsoa
+    end
   end
 end

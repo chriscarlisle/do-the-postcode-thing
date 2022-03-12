@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PostcodeCheck
   class PostcodeCheckUnavailable < StandardError; end
 
@@ -8,7 +10,7 @@ class PostcodeCheck
   def serviced?
     return false unless valid_uk_postcode_format?
 
-    return explicitly_serviced? || serviced_by_lsoa?
+    explicitly_serviced? || serviced_by_lsoa?
   end
 
   private
@@ -20,14 +22,14 @@ class PostcodeCheck
   def explicitly_serviced?
     ServicedPostcode.where(postcode: @ukpostcode.to_s).exists?
   end
-  
+
   def serviced_by_lsoa?
     postcodes_io = Postcodes::IO.new
     postcode = postcodes_io.lookup(@ukpostcode.to_s)
 
     return false unless postcode
 
-    return postcode.lsoa.start_with? *ServicedLsoa.pluck(:lsoa_prefix)
+    postcode.lsoa.start_with?(*ServicedLsoa.pluck(:lsoa_prefix))
   rescue Excon::Error
     raise PostcodeCheckUnavailable
   end

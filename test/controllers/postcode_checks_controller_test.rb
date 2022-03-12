@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class PostcodeChecksControllerTest < ActionDispatch::IntegrationTest
@@ -10,7 +12,7 @@ class PostcodeChecksControllerTest < ActionDispatch::IntegrationTest
     end
 
     PostcodeCheck.stub :new, postcode_check do
-      post postcode_checks_path, params: { postcode: TEST_POSTCODE } 
+      post postcode_checks_path, params: { postcode: TEST_POSTCODE }
 
       assert_response :success
       assert_select "h3", /Yes!/
@@ -24,7 +26,7 @@ class PostcodeChecksControllerTest < ActionDispatch::IntegrationTest
     end
 
     PostcodeCheck.stub :new, postcode_check do
-      post postcode_checks_path, params: { postcode: TEST_POSTCODE } 
+      post postcode_checks_path, params: { postcode: TEST_POSTCODE }
 
       assert_response :success
       assert_select "h3", /No!/
@@ -38,7 +40,7 @@ class PostcodeChecksControllerTest < ActionDispatch::IntegrationTest
     end
 
     PostcodeCheck.stub :new, postcode_check do
-      post postcode_checks_path, params: { postcode: TEST_POSTCODE } 
+      post postcode_checks_path, params: { postcode: TEST_POSTCODE }
 
       assert_response :success
       assert_select "h3", /maybe?/

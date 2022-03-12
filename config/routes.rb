@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   namespace :admin do
-    get '/' => redirect('/admin/serviced_postcodes')
+    get "/" => redirect("/admin/serviced_postcodes")
     resources :serviced_postcodes
     resources :serviced_lsoas
   end

@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class ServicedLsoaTest < ActiveSupport::TestCase
-
   test "lsoa_prefix presence is validated" do
     assert !ServicedLsoa.new.valid?
   end
