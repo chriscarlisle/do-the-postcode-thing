@@ -1,7 +1,19 @@
 require "application_system_test_case"
 
 class CompleteJourneyTest < ApplicationSystemTestCase
+
+  def setup
+    VCR.turn_off!
+    WebMock.allow_net_connect!
+  end
+
+  def teardown
+    WebMock.disable_net_connect!    
+    VCR.turn_on!
+  end
+  
   test "visiting the index" do
+    
     visit "/"
   
     ["SE1 7QD", "SE1 7QA", "SH24 1AA", "SH24 1AB"].each do |postcode|
