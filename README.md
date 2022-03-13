@@ -61,6 +61,8 @@ There is no reporting, monitoring or statistics gathering mechanism. Logging sea
 
 The admin panel is 'functional', but not particularly slick. I'd prefer to have a single page for managing both the postcodes and the lsoas from.
 
+No CI Pipelines have been added. They could and should be.
+
 There is plenty of opportunity for further refactoring. There is quite a lot of duplication in the tests specifically.
 
 ## Standing on the shoulders of giants
@@ -68,5 +70,13 @@ There is plenty of opportunity for further refactoring. There is quite a lot of 
 Although this was a technical test, I chose to use off-the-shelf packages to achieve the solution. This is likely the approach that would have been taken in a real-world situation too:
 
 * [threedaymonk/uk_postcode](https://github.com/threedaymonk/uk_postcode) was used for postcode parsing and validation.
-* [jamesruston/postcodes_io](https://github.com/jamesruston/postcodes_io) was used for interacting with the postcodes.io api. This was recommended from the postcodes.io documenation.
+* [jamesruston/postcodes_io](https://github.com/jamesruston/postcodes_io) was used for interacting with the postcodes.io api. This was recommended from the postcodes.io documentation.
 * [superadministration/super](https://github.com/superadministration/super) was used for the admin panel.
+
+### Screenshots
+
+![Home](./docs/images/home.png)
+
+![No!](./docs/images/no.png)
+
+![Yes!](./docs/images/yes.png)
