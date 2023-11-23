@@ -4,9 +4,9 @@
 
 It's not running permanently. Please contact me to 'turn it on'
 
-Demo app available on: https://do-the-postcode-thing.herokuapp.com/
+Demo app available on: https://do-the-postcode-thing.fly.dev/
 
-Admin panel available at https://do-the-postcode-thing.herokuapp.com/admin
+Admin panel available at https://do-the-postcode-thing.fly.dev/admin
 
 Username: admin
 
